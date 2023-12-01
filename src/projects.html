@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Project</title>
 </head>
 <body>
-         <header>
+    <header>
         <div class="profile">
-            <img src="images/profile.jpg" alt="Tamiru Alemnew">
+            <div class="profile-Name">
+                 <img src="images/profile.jpg" alt="Tamiru Alemnew">
             <p>Tamiru Alemnew</p>
+            </div>
+            
+            <i class="fas fa-bars"></i>
         </div>
-        <nav>
-            <ul>
+        <nav >
+            <ul class="navbar-navigation">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -49,27 +53,44 @@
             </div>
         </section>
     </main>
-    <footer>
+        <footer>
         <nav class="navigation">
-            <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                    <li><a href="resume.html">Resume</a></li>
+            <div class="About-me">
+                <span class="nav-title">About Me</span>
+                <p> I'm a software developer skilled in multiple languages and frameworks. I enjoy problem-solving and continuously strive to improve my skills.</p>
+            </div>
+            <ul class="footer-nav">
+                    <li><span class="nav-title">Portfolio</span></li>
+                    <li><a class="quick-links" href="home.html">Home</a></li>
+                    <li><a class="quick-links" href="about.html">About Me</a></li>
+                    <li><a class="quick-links" href="projects.html">Projects</a></li>
+                    <li><a class="quick-links" href="contact.html">Contact Me</a></li>
+                    <li><a class="quick-links" href="resume.html">Resume</a></li>
             </ul>
         </nav>
-        <div class="social-media">
-            <a href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"><i class="fab fa-facebook"> Face Book</i></a>
-            <a href="https://www.instagram.com/tamiru_alemnew/" target="_blank"><i class="fab fa-instagram">Instagram </i></a>
-            <a href="https://www.linkedin.com/in/tamiru-alemnew-7b1b3b1b2/" target="_blank"><i class="fab fa-linkedin">Linkedin</i></a>
-            <a href="https://github.com/Tamiru-Alemnew" target="_blank"><i class="fab fa-github">Github</i></a>
-        </div>
-        <address>
-            Gerji, Addis Ababa<br>
-            Ethiopia<br>
-            Phone: <a href="tel:+251943045904">+251943045904</a>
+
+        <address >
+            <span class="nav-title"> Contact</span>
+            <span>Gerji, Addis Ababa Ethiopia</span>
+            <span><i class="fas fa-phone"></i> <a class="phone" href="tel:+251943045904">+251943045904</a></span>
+            <span><i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
         </address>
+        <div class="dot"><i class="fas fa-ellipsis-h"></i></div>
+        <div class="social-media">
+            <ul class="social-media-list">
+                <li class="icon"> <a href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="icon"><a href="https://www.instagram.com/tamiru_alemnew/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="icon"><a href="https://www.linkedin.com/in/Tamiru-Alemnew/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="icon"><a href="https://github.com/Tamiru-Alemnew" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li class="icon"><a href="https://github.com/Tamiru-Alemnew" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </div>
+        <p class="copy-right">Copywrite &copy; 2023 Tamiru Alemnew</p>
     </footer>
 </body>
 </html>
