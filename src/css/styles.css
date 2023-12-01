@@ -101,7 +101,7 @@ header img{
 }
 .contact-me{
     background-color: rgb(255, 255, 255);
-    padding: 40px;
+    padding: 20px;
 }
 .contact-me-form{
     display: flex;
@@ -153,6 +153,13 @@ footer{
     line-height: 22px;
     font-family: sans-serif;
 
+}
+.projects img{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.soft-skills{
+    padding: 20px;
 }
 .nav-title{
     font-size: larger;
@@ -257,6 +264,7 @@ address{
 .rresume-text{
 display: flex;
 flex-direction: column;
+padding: 10px;
 }
 
 .skill-list{
@@ -271,6 +279,7 @@ flex-direction: column;
     border: 1px solid black;
     padding: 5px;
     border-radius: 15px;
+    background-color: white;
 }
 .skill-set ul li {
     color: black;
