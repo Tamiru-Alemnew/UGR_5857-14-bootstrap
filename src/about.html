@@ -14,7 +14,7 @@
   <body>
     <header>
       <div class="profile">
-        <div class="profile-Name">
+        <div class="profile__name">
           <img src="images/profile.jpg" alt="Tamiru Alemnew" />
           <p>Tamiru Alemnew</p>
         </div>
@@ -22,7 +22,7 @@
         <i class="fas fa-bars"></i>
       </div>
       <nav>
-        <ul class="navbar-navigation">
+        <ul class="navbar-footer__navigation">
           <li><a href="home.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -35,107 +35,294 @@
       <section class="certificates">
         <h2>About me</h2>
         <h4>Proofs About My Expertise</h4>
-        <div class="certificates1">
+        <div class="certificates__item certificate__one">
           <h3>CS50 : Introduction to computer science</h3>
-          <img src="./images/CS50x.png" alt="certificate" />
-          <p>
-            This course provided a broad understanding of computer science and
-            programming. It covered key topics such as algorithmic thinking,
-            data structures, and web development.
-          </p>
+          <div class="certificate__one__item-detail">
+            <img src="./images/CS50x.png" alt="certificate" />
+            <div>
+              <p>
+                This course provided a broad understanding of computer science
+                and programming. It covered key topics such as algorithmic
+                thinking, data structures, and web development.
+              </p>
+              <ul class="hidden">
+                <li>
+                  I completed the renowned CS50 course from Harvard University,
+                  an intensive program designed to introduce the fundamentals of
+                  computer science and programming.
+                </li>
+                <li>
+                  The course provided a comprehensive understanding of
+                  algorithmic thinking, enabling me to solve complex problems
+                  efficiently.
+                </li>
+                <li>
+                  It also delved into the intricacies of data structures,
+                  teaching me how to organize and store data effectively for
+                  optimal performance.
+                </li>
+                <div class="tab-hidden">
+                  <li>
+                    The course covered web development extensively. I learned to
+                    build dynamic websites using HTML, CSS, and JavaScript,
+                    gaining a solid understanding of how the web works.
+                  </li>
+                  <li>
+                    I learned to write semantic HTML, create responsive and
+                    visually appealing layouts with CSS, and add interactivity
+                    to websites with JavaScript.
+                  </li>
+                  <li>
+                    The course introduced me to programming languages like C and
+                    Python. I learned to write efficient and readable code in C,
+                    understanding the low-level workings of computers. Python
+                    was used to teach higher-level concepts like web scraping,
+                    data analysis, and machine learning.
+                  </li>
+                  <li>
+                    The problem-solving skills I acquired from this course are
+                    invaluable. I learned to break down complex problems into
+                    smaller, manageable parts, and to think algorithmically to
+                    come up with efficient solutions.
+                  </li>
+                  <li>
+                    Overall, the CS50 course provided a solid foundation in
+                    computer science and programming, equipping me with the
+                    skills and knowledge to tackle any software development
+                    challenge.
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="certificates2">
+        <div class="certificates__item certificate__two">
           <h3>Back End Development and APIs</h3>
-          <img src="./images/FreeCodeCamp.jpg" alt="certificate" />
-          <p>
-            This course provided a broad understanding of back end development
-            and APIs. It covered key topics such as Node.js, Express.js, and
-            MongoDB.
-          </p>
+          <div class="certificate___two__item-detail">
+            <img src="./images/FreeCodeCamp.jpg" alt="certificate" />
+            <div>
+              <p>
+                This course provided a broad understanding of back end
+                development and APIs. It covered key topics such as Node.js,
+                Express.js, and MongoDB.
+              </p>
+              <ul class="hidden">
+                <li>
+                  I completed a comprehensive course from FreeCodeCamp, an
+                  online platform that offers hands-on and interactive learning
+                  experiences. The course was focused on full-stack JavaScript
+                  development, covering a wide range of topics and technologies
+                  that are essential in today's web development industry.
+                </li>
+                <li>
+                  The course provided an in-depth understanding of Node.js,
+                  Express.js, and MongoDB. Node.js is a runtime environment that
+                  allows JavaScript to be run on the server side. Express.js is
+                  a web application framework for Node.js, which simplifies the
+                  process of building web applications. MongoDB is a NoSQL
+                  database that provides high performance, high availability,
+                  and easy scalability.
+                </li>
+                <div class="tab-hidden">
+                  <li>
+                    I learned how to build robust and scalable APIs using
+                    Node.js and Express.js. APIs, or Application Programming
+                    Interfaces, are a set of rules and protocols for building
+                    and interacting with software applications. They are
+                    essential for modern web applications as they allow
+                    different software applications to communicate with each
+                    other.
+                  </li>
+                  <li>
+                    The course also taught me how to work with different types
+                    of databases, including both SQL and NoSQL databases. I
+                    learned how to design database schemas, perform CRUD
+                    operations, and use advanced querying techniques. This
+                    knowledge has equipped me with the skills to choose the
+                    right database for different applications and use it
+                    effectively.
+                  </li>
+                  <li>
+                    Through this course, I acquired important skills such as
+                    back-end development, database management, and server-side
+                    scripting. Back-end development involves creating the
+                    server-side logic of a web application, which includes
+                    interacting with databases, authenticating users, and
+                    handling business logic. Database management involves
+                    designing, implementing, and maintaining databases.
+                    Server-side scripting involves writing scripts that run on
+                    the server and generate dynamic web content.
+                  </li>
+                  <li>
+                    Overall, the FreeCodeCamp course provided me with a
+                    comprehensive understanding of full-stack JavaScript
+                    development. I learned how to build complete web
+                    applications, from creating interactive user interfaces on
+                    the client side to implementing server-side logic and
+                    managing databases. This course has equipped me with the
+                    skills and knowledge to become a competent full-stack
+                    JavaScript developer.
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="hero">
+      <section class="more">
         <h3>More About Me</h3>
         <p>
-          As a dedicated full stack web developer, I bring a strong focus on
-          crafting clean, functional, and efficient code. My background in
-          computer science and hands-on experience in the industry have equipped
-          me with a diverse skill set, including proficiency in JavaScript,
-          React, Node.js, and Python.
+          I am a committed full stack web developer with a primary focus on
+          meticulously crafting clean, functional, and efficient code. My
+          academic background in computer science, complemented by extensive
+          hands-on experience in the industry, has endowed me with a
+          well-rounded skill set. I am particularly proficient in utilizing
+          technologies such as JavaScript, React, Node.js, and Python.
         </p>
 
         <p>
-          My journey has led me to work on an array of projects, from responsive
-          websites to intricate web applications. I thrive on learning and
-          adapting to new technologies, always aiming to tackle fresh
-          challenges. My ultimate goal? To develop software that truly makes a
-          difference.
+          Throughout my professional journey, I have actively contributed to a
+          diverse range of projects, spanning from the development of responsive
+          websites to the creation of intricate web applications. I thrive on
+          the continuous process of learning and adapting to emerging
+          technologies, always eager to take on new and stimulating challenges.
+          My overarching aspiration is to develop software solutions that go
+          beyond mere functionality and truly make a meaningful difference.
         </p>
+
+        <ul>
+          <li>
+            <strong>Diverse Project Contributions:</strong>
+            <p>
+              I have actively participated in a wide array of projects,
+              showcasing my versatility in the field. This includes the
+              development of responsive websites, where I honed my skills in
+              crafting user-friendly interfaces that adapt seamlessly to various
+              devices.
+            </p>
+          </li>
+
+          <li>
+            <strong>Web Application Expertise:</strong>
+            <p>
+              Additionally, I have been deeply involved in the creation of
+              intricate web applications. This has allowed me to delve into
+              complex programming challenges, design scalable architectures, and
+              implement robust solutions that meet the specific needs of each
+              project.
+            </p>
+          </li>
+
+          <li>
+            <strong>Continuous Learning:</strong>
+            <p>
+              I am passionate about staying abreast of the latest technological
+              advancements. My commitment to continuous learning ensures that I
+              am always well-versed in emerging technologies and industry best
+              practices. This proactive approach empowers me to bring innovative
+              solutions to the projects I undertake.
+            </p>
+          </li>
+
+          <li>
+            <strong>Adaptability:</strong>
+            <p>
+              The dynamic nature of the tech industry requires a high degree of
+              adaptability. I pride myself on my ability to swiftly adapt to new
+              tools, frameworks, and methodologies, ensuring that my skill set
+              remains current and relevant.
+            </p>
+          </li>
+
+          <li>
+            <strong>Championing Challenges:</strong>
+            <p>
+              I approach my work with a mindset that embraces challenges. The
+              prospect of tackling new and stimulating problems excites me, as
+              it provides opportunities for growth and allows me to push the
+              boundaries of my skills.
+            </p>
+          </li>
+
+          <li>
+            <strong>Aspiration for Impactful Solutions:</strong>
+            <p>
+              Above all, my overarching aspiration is to go beyond the mere
+              functionality of software solutions. I am driven by the desire to
+              create impactful and meaningful applications that contribute
+              positively to the lives of users and address real-world problems.
+            </p>
+          </li>
+        </ul>
       </section>
     </main>
-    <footer>
-      <nav class="navigation">
-        <div class="About-me">
-          <span class="nav-title">About Me</span>
+    <footer class="footer">
+      <nav class="footer__navigation">
+        <div class="footer__about-me">
+          <span class="footer__nav-title">About Me</span>
           <p>
             I'm a software developer skilled in multiple languages and
             frameworks. I enjoy problem-solving and continuously strive to
             improve my skills.
           </p>
         </div>
-        <ul class="footer-nav">
-          <li><span class="nav-title">Portfolio</span></li>
-          <li><a class="quick-links" href="home.html">Home</a></li>
-          <li><a class="quick-links" href="about.html">About Me</a></li>
-          <li><a class="quick-links" href="projects.html">Projects</a></li>
-          <li><a class="quick-links" href="contact.html">Contact Me</a></li>
-          <li><a class="quick-links" href="resume.html">Resume</a></li>
+        <ul class="footer__nav">
+          <li><span class="footer__nav-title">Portfolio</span></li>
+          <li><a class="footer__quick-links" href="home.html">Home</a></li>
+          <li><a class="footer__quick-links" href="about.html">About Me</a></li>
+          <li>
+            <a class="footer__quick-links" href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a class="footer__quick-links" href="contact.html">Contact Me</a>
+          </li>
+          <li><a class="footer__quick-links" href="resume.html">Resume</a></li>
         </ul>
       </nav>
 
-      <address>
-        <span class="nav-title"> Contact</span>
+      <address class="footer__address">
+        <span class="footer__nav-title"> Contact</span>
         <span>Gerji, Addis Ababa Ethiopia</span>
         <span
           ><i class="fas fa-phone"></i>
           <a class="phone" href="tel:+251943045904">+251943045904</a></span
         >
-        <span><i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
+        <span> <i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
       </address>
-      <div class="dot"><i class="fas fa-ellipsis-h"></i></div>
-      <div class="social-media">
-        <ul class="social-media-list">
-          <li class="icon">
+      <div class="footer__dot"><i class="fas fa-ellipsis-h"></i></div>
+      <div class="footer__social-media">
+        <ul class="footer__social-media-list">
+          <li class="footer__icon">
             <a href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"
               ><i class="fab fa-facebook"></i
             ></a>
           </li>
-          <li class="icon">
+          <li class="footer__icon">
             <a href="https://www.instagram.com/tamiru_alemnew/" target="_blank"
               ><i class="fab fa-instagram"></i
             ></a>
           </li>
-          <li class="icon">
+          <li class="footer__icon">
             <a
               href="https://www.linkedin.com/in/Tamiru-Alemnew/"
               target="_blank"
               ><i class="fab fa-linkedin"></i
             ></a>
           </li>
-          <li class="icon">
+          <li class="footer__icon">
             <a href="https://github.com/Tamiru-Alemnew" target="_blank"
               ><i class="fab fa-github"></i
             ></a>
           </li>
-          <li class="icon">
+          <li class="footer__icon">
             <a href="https://github.com/Tamiru-Alemnew" target="_blank"
               ><i class="fab fa-twitter"></i
             ></a>
           </li>
         </ul>
       </div>
-      <p class="copy-right">Copywrite &copy; 2023 Tamiru Alemnew</p>
+      <p class="footer__copy-right">Copywrite &copy; 2023 Tamiru Alemnew</p>
     </footer>
   </body>
 </html>
