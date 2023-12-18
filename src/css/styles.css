@@ -5,6 +5,13 @@ body{
     width: 100vw;
     overflow-x: hidden;
 }
+#typewriter-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000;
+}
 p{
     font-size: 1.2rem;
     line-height: 22px;
@@ -23,10 +30,12 @@ li, a{
 }
 .hero{
     padding: 20px;
+
 }
 .hero__image{
     border-radius: 10px;
-    border: 2px solid black;
+    box-shadow:  4px 4px 8px #dfdbdb,
+                -5px -4px 8px #bebebe;
 }
 
 header{
@@ -72,10 +81,10 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
-    border: 1px solid rgb(25, 20, 20);
-    border-radius: 10px;
+
+    border-radius: 20px;
 }
 .techstack__item img{
     width: 200px;
@@ -94,6 +103,9 @@ header img{
     list-style: none;
     gap: 10px;
     display: none;
+}
+.visible{
+    display: block;
 }
 #techstack{
     background-color: rgb(45, 45, 46);
@@ -130,7 +142,7 @@ header img{
 footer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #212529;
     padding: 20px;
@@ -142,6 +154,11 @@ footer{
     align-items: center;
 }
 .footer__navigation{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+.footer__navigation2{
     display: flex;
     align-items: baseline;
     justify-content: space-around;
@@ -193,24 +210,31 @@ footer{
     justify-content: center;
     align-items: center;
     height: auto;
-    background-color: rgb(249 243 238);
+    background-color: rgb(49, 48, 47);
 }
-
+.resume h2{
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
 .resume__text{
     display: flex;
     overflow-x: auto;
     gap: 20px;
     width: 90vw;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: white;
 }
 .resume__text-item{
     flex: 0 0 auto;
     width: 300px;
     padding: 20px;
     margin: 5px 0 ;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color: white;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow:  4px 4px 6px #d9d9d9,
+                -4px -4px 6px #d9d9d9;
 }
 .footer__copy-right{
     height: 20px ;
@@ -236,6 +260,8 @@ address{
 }
 .footer__social-media-list{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
     margin-right: 40px;
     margin-top: 30px;
@@ -297,10 +323,12 @@ address{
 }
 .skill-set{
     width: 150px;
-    border: 1px solid black;
     padding: 5px;
     border-radius: 15px;
     background-color: white;
+    border-radius: 10px;
+box-shadow:  8px 8px 16px #bebebe,
+             -8px -8px 16px #ffffff;
 }
 .skill-set ul li {
     color: black;
@@ -323,9 +351,10 @@ address{
     width: 280px;
     padding: 20px;
     margin: 20px 0 ;
-    border: 1px solid black;
-    border-radius: 20px;
-    background-color: white;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow:  8px 8px 16px #d9d9d9,
+                -8px -8px 16px #d9d9d9;
 }
 .hidden{
     display: none;
@@ -366,8 +395,14 @@ address{
     align-items: center;
     
 }
-.reasons p{
+.reasons>p{
+    padding: 30px;
     width: 300px;
+    height: 160px;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow:  8px 8px 16px #d9d9d9,
+                -8px -8px 16px #d9d9d9;
 }
 .row{
     flex-direction: row;
@@ -401,9 +436,10 @@ address{
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    gap : 40px;
   }
   .hero__image{
-    width: 40%;
+    width: 30%;
     height: auto;
   }
   .hero__text{
@@ -417,13 +453,15 @@ address{
       width: 21%;
       padding: 30px;
   }
-
+.skill-set h5{
+    font-size: 20px;
+}
 .footer__dot{
     display: none;
 }
 footer{
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
     align-items: baseline;
     padding:20px 80px;
 }
@@ -439,12 +477,12 @@ footer{
     flex-direction: column;
     justify-content:space-between;
     width: auto;
-    overflow-y: scroll;
     padding: 20px;
     margin: 5px 0 ;
-    border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: white;
+    box-shadow:  4px 4px 8px #dfdbdb,
+                -5px -4px 8px #bebebe;
 
 }
 .projects__list{
@@ -510,6 +548,7 @@ footer{
 }
 .reasons p{
     width: 100%;
+
 }
 
 .contact{
@@ -519,6 +558,11 @@ footer{
     align-items: center;
     margin:40px ;
     gap: 10%;
+    padding: 40px 0;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow:  8px 8px 16px #d9d9d9,
+                -8px -8px 16px #d9d9d9;
 }
 .projects__item {
     display: flex;
@@ -569,8 +613,7 @@ flex-direction: row-reverse;
     
 }
 .resume__content-home{
-    width: 60%;
-overflow-x: hidden;
+    overflow-x: hidden;
 }
 .navbar-footer__navigation li a:hover{
 color: #959ca3;
@@ -609,3 +652,4 @@ header{
     border: none;
     object-fit: contain;
 }
+
