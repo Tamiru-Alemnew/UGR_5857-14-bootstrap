@@ -45,12 +45,10 @@ function showSlide(index) {
     currentSlide = index;
   }
 
-  // Hide all slides
   slides.forEach((slide) => {
     slide.style.display = "none";
   });
 
-  // Show the current slide
   slides[currentSlide].style.display = "block";
 }
 
@@ -62,9 +60,30 @@ function prevSlide() {
   showSlide(currentSlide - 1);
 }
 
-// Initial setup
 showSlide(currentSlide);
 
-// Optionally, you can add navigation buttons
 document.getElementById("prevBtn").addEventListener("click", prevSlide);
 document.getElementById("nextBtn").addEventListener("click", nextSlide);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const heroImage = document.getElementById("heroImage");
+  const modal = document.getElementById("myModal");
+  const closeModal = document.getElementById("closeModal");
+
+  heroImage.addEventListener("click", function () {
+    modal.style.display = "block";
+  });
+
+  closeModal.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+
+

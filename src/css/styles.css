@@ -37,14 +37,17 @@ li, a{
     box-shadow:  4px 4px 8px #dfdbdb,
                 -5px -4px 8px #bebebe;
 }
-
+.hero__image:hover{
+    transform: scale(1.05);
+}
 header{
-    background-color: rgba(40, 39, 39, 0.9);
+    background-color: rgba(59, 56, 56, 0.92);
     justify-content: space-between;
     padding: 10px;
     color: white;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 header img{
@@ -101,11 +104,12 @@ header img{
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    gap: 10px;
+    gap: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: none;
 }
 .visible{
-    display: block;
+    display: flex;
 }
 #techstack{
     background-color: rgb(45, 45, 46);
@@ -172,8 +176,12 @@ footer{
     white-space: nowrap;
 
 }
+.footer__quick-links{
+      transition: background-color 0.3s;
+}
 .footer__quick-links:hover{
-    color: #ffffff;
+  background-color: #918888;
+  color: white;
 }
 .footer__navigation ul li a , .phone{
     color: #8c8f92;
@@ -192,8 +200,11 @@ footer{
     text-align: center;
 }
 .projects img{
-    border: 1px solid black;
     border-radius: 10px;
+
+    background: #ffffff;
+    box-shadow:  4px 4px 6px #d9d9d9,
+                -4px -4px 6px #d9d9d9;
 }
 .soft-skills{
     padding: 20px;
@@ -266,6 +277,9 @@ address{
     margin-right: 40px;
     margin-top: 30px;
 }
+.footer__address span{
+    white-space: nowrap;
+}
 .footer__social-media-list li a{
 
     font-size: 20px;
@@ -327,8 +341,8 @@ address{
     border-radius: 15px;
     background-color: white;
     border-radius: 10px;
-box-shadow:  8px 8px 16px #bebebe,
-             -8px -8px 16px #ffffff;
+    box-shadow:  8px 8px 6px #d4cdcd,
+             -8px -8px 6px #d4cdcd;
 }
 .skill-set ul li {
     color: black;
@@ -618,6 +632,9 @@ flex-direction: row-reverse;
 .navbar-footer__navigation li a:hover{
 color: #959ca3;
 }
+.projects img{
+   box-shadow: none;
+}
 }
 /* media query for desktop */
 @media screen and (min-width: 968px) {
@@ -652,4 +669,8 @@ header{
     border: none;
     object-fit: contain;
 }
+
+
+
+
 
