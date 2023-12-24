@@ -7,213 +7,210 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Project</title>
   </head>
   <body>
-    <header>
-      <div class="profile">
-        <div class="profile__name">
-          <img src="images/profile.jpg" alt="Tamiru Alemnew" />
-          <p>Tamiru Alemnew</p>
+<header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <div class="profile d-flex justify-content-between">
+            <div class="d-flex gap-2 font-weight-bold align-items-center">
+                <img src="images/profile.jpg" alt="Tamiru Alemnew" class="rounded-circle" width="50" height="50">
+                <p class="nav-item text-white  ">Tamiru Alemnew</p>
+            </div>
         </div>
 
-        <i class="fas fa-bars"></i>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          </ul>
       </div>
-      <nav>
-        <ul class="navbar-footer__navigation">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-          <li><a href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
-    </header>
+    </div>
+</header>
     <main>
-      <section class="projects">
-        <h2>Projects</h2>
-        <h3>Project 1</h3>
-        <div class="projects__item item-1">
-          <img src="images/project1.jpg" alt="project 1" />
-          <div>
-            <h3>4K Labs Website</h3>
-            <p>
-              I built a comprehensive website for 4K Labs, a prominent research
-              lab located within the 4 Kilo campus of Addis Ababa University.
-              The website serves as a digital platform for the lab to showcase
-              its cutting-edge research, highlight the team's expertise, and
-              engage with the global scientific community.
-            </p>
-            <p>
-              The project involved a deep understanding of the lab's needs and
-              translating them into a functional and aesthetically pleasing
-              design. I used modern web technologies to ensure the website is
-              responsive, accessible, and SEO-friendly. The website features
-              include a dynamic news section, a detailed research section, and a
-              contact form for inquiries.
-            </p>
-            <p>
-              This project not only improved my technical skills but also honed
-              my ability to communicate and collaborate with clients to deliver
-              a product that meets their expectations.
-            </p>
-          </div>
-        </div>
-        <h3>Project 2</h3>
-        <div class="projects__item item-2">
-          <img src="images/apple.jpg" alt="project 2" />
-          <div>
-            <h3>Official Apple Website Clone</h3>
-            <p>
-              As a part of my self-directed learning in web development, I
-              undertook the challenge of cloning the official Apple website.
-              This project was an intensive study in understanding and
-              replicating the intricate design, layout techniques, and user
-              experience of a professional, high-traffic website.
-            </p>
-            <p>
-              The website clone was built using HTML, CSS, and JavaScript, with
-              a keen focus on responsive design to ensure a seamless user
-              experience across different device sizes. I implemented various
-              features of the original website, such as the footer__navigation
-              bar, product sections, and footer links.
-            </p>
-            <p>
-              This project was a great exercise in attention to detail, and it
-              significantly improved my understanding of how large-scale
-              websites are designed and developed. It also honed my skills in
-              debugging and problem-solving as I worked to replicate the
-              functionalities of the original website as closely as possible.
-            </p>
-          </div>
-        </div>
-        <h3>Project 3</h3>
-        <div class="projects__item item-3">
-          <img src="images/amazon.jpg" alt="project 3" />
-          <div>
-            <h3>Official Amazon Website Clone</h3>
-            <p>
-              One of my most challenging projects was cloning the official
-              Amazon website. This project required a deep understanding of
-              complex web functionalities such as user authentication, product
-              search, shopping cart management, and checkout process.
-            </p>
-            <p>
-              The clone was built using React for the front-end and Node.js with
-              Express.js for the back-end. I implemented various features of the
-              original website, including user registration and login, product
-              listing, shopping cart, and a simulated checkout process.
-            </p>
-            <p>
-              This project was a significant learning experience. It pushed me
-              to solve complex problems and implement functionalities that are
-              critical to e-commerce websites. It also improved my understanding
-              of how large-scale websites handle data and manage user
-              interactions.
-            </p>
-          </div>
-        </div>
-        <div class="Exp">
-          <h3>Other Experiences</h3>
-          <div class="experience">
-            <div class="resume__text-item">
-              <h4>Software Engineer</h4>
-              <p>Arez Armada</p>
-              <p>2023 - present</p>
-              <p>
-                As a Software Engineer at Arez Armada, I'm responsible for
-                designing, coding, and modifying software, from layout to
-                function and according to specifications. I strive to create
-                visually appealing sites that feature user-friendly design and
-                clear footer__navigation. I work closely with our UX designers
-                and other developers to ensure a great user experience and
-                efficient application logic.
-              </p>
-            </div>
-            <div class="resume__text-item">
-              <h4>Back-End Developer</h4>
-              <h5>4K Labs</h5>
-              <p>2023 - Present</p>
-              <p>
-                As a Back-End Developer at 4K Labs, I've been responsible for
-                server-side web application logic and integration of the work
-                front-end developers do. I've developed and maintained the
-                server-side network, ensured high performance and
-                responsiveness, and integrated user-facing elements with
-                server-side logic. This role has allowed me to deepen my
-                understanding of back-end technologies and improve my
-                problem-solving skills.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <nav class="footer__navigation">
-        <div class="footer__about-me">
-          <span class="footer__nav-title">About Me</span>
-          <p>
-            I'm a software developer skilled in multiple languages and
-            frameworks. I enjoy problem-solving and continuously strive to
-            improve my skills.
-          </p>
-        </div>
-        <ul class="footer__nav">
-          <li><span class="footer__nav-title">Portfolio</span></li>
-          <li><a class="footer__quick-links" href="home.html">Home</a></li>
-          <li><a class="footer__quick-links" href="about.html">About Me</a></li>
-          <li>
-            <a class="footer__quick-links" href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a class="footer__quick-links" href="contact.html">Contact Me</a>
-          </li>
-          <li><a class="footer__quick-links" href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
+<section class="projects container p-5">
+ <h2 class="mb-4">Projects</h2>
 
-    <div class="footer__navigation2">
-      <div class="footer__social-media">
-        <ul class="footer__social-media-list">
-          <li class="footer__icon">
-            <a href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a href="https://www.instagram.com/tamiru_alemnew/" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a
-              href="https://www.linkedin.com/in/Tamiru-Alemnew/"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a href="https://github.com/Tamiru-Alemnew" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <address class="footer__address">
-        <span class="footer__nav-title"> Contact</span>
-        <span>Gerji, Addis Ababa Ethiopia</span>
-        <span
-          ><i class="fas fa-phone"></i>
-          <a class="phone" href="tel:+251943045904">+251943045904</a></span
-        >
-        <span> <i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
-      </address>
-      </div>
-      
-      <p class="footer__copy-right">Copywrite &copy; 2023 Tamiru Alemnew</p>
-    </footer>
-       <script src="./script/script.js"></script>
+    <!-- Project 1 -->
+    <div class="row projects__item item-1 mb-5 shadow">
+        <div class="col-md-6">
+            <img src="images/project1.jpg" alt="project 1" class="card-img-top" />
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">4K Labs Website</h3>
+                    <p class="card-text">
+                        I built a comprehensive website for 4K Labs, a prominent research lab located within the 4 Kilo campus of Addis Ababa University. The website serves as a digital platform for the lab to showcase its cutting-edge research, highlight the team's expertise, and engage with the global scientific community.
+                    </p>
+                    <p class="card-text">
+                        The project involved a deep understanding of the lab's needs and translating them into a functional and aesthetically pleasing design. I used modern web technologies to ensure the website is responsive, accessible, and SEO-friendly. The website features include a dynamic news section, a detailed research section, and a contact form for inquiries.
+                    </p>
+                    <p class="card-text">
+                        This project not only improved my technical skills but also honed my ability to communicate and collaborate with clients to deliver a product that meets their expectations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="row projects__item item-2 mb-5 shadow">
+        <div class="col-md-6 order-md-2">
+            <img src="images/apple.jpg" alt="project 2" class="card-img-top" />
+        </div>
+        <div class="col-md-6 order-md-1">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Official Apple Website Clone</h3>
+                    <p class="card-text">
+                        As a part of my self-directed learning in web development, I undertook the challenge of cloning the official Apple website. This project was an intensive study in understanding and replicating the intricate design, layout techniques, and user experience of a professional, high-traffic website.
+                    </p>
+                    <p class="card-text">
+                        The website clone was built using HTML, CSS, and JavaScript, with a keen focus on responsive design to ensure a seamless user experience across different device sizes. I implemented various features of the original website, such as the footer__navigation bar, product sections, and footer links.
+                    </p>
+                    <p class="card-text">
+                        This project was a great exercise in attention to detail, and it significantly improved my understanding of how large-scale websites are designed and developed. It also honed my skills in debugging and problem-solving as I worked to replicate the functionalities of the original website as closely as possible.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="row projects__item item-3 mb-5 shadow">
+        <div class="col-md-6">
+            <img src="images/amazon.jpg" alt="project 3" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Official Amazon Website Clone</h3>
+                    <p class="card-text">
+                        One of my most challenging projects was cloning the official Amazon website. This project required a deep understanding of complex web functionalities such as user authentication, product search, shopping cart management, and checkout process.
+                    </p>
+                    <p class="card-text">
+                        The clone was built using React for the front-end and Node.js with Express.js for the back-end. I implemented various features of the original website, including user registration and login, product listing, shopping cart, and a simulated checkout process.
+                    </p>
+                    <p class="card-text">
+                        This project was a significant learning experience. It pushed me to solve complex problems and implement functionalities that are critical to e-commerce websites. It also improved my understanding of how large-scale websites handle data and manage user interactions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other Experiences -->
+<section class="Exp container p-5">
+    <h3 class="mb-4">Other Experiences</h3>
+    <div class="row experience flex-nowrap overflow-auto">
+        <!-- Software Engineer -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-lg">
+                <div class="card-body">
+                    <h4 class="card-title">Software Engineer</h4>
+                    <p class="card-text">Arez Armada</p>
+                    <p class="card-text">2023 - present</p>
+                    <p class="card-text">
+                        As a Software Engineer at Arez Armada, I'm responsible for designing, coding, and modifying software, from layout to function and according to specifications. I strive to create visually appealing sites that feature a user-friendly design and clear navigation. I work closely with our UX designers and other developers to ensure a great user experience and efficient application logic.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back-End Developer -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 shadow-lg">
+                <div class="card-body">
+                    <h4 class="card-title">Back-End Developer</h4>
+                    <h5 class="card-subtitle mb-2 text-muted">4K Labs</h5>
+                    <p class="card-text">2023 - Present</p>
+                    <p class="card-text">
+                        As a Back-End Developer at 4K Labs, I've been responsible for server-side web application logic and integration of the work front-end developers do. I've developed and maintained the server-side network, ensured high performance and responsiveness, and integrated user-facing elements with server-side logic. This role has allowed me to deepen my understanding of back-end technologies and improve my problem-solving skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</section>
+
+    </main>
+<footer class="container-fluid bg-dark text-white p-5">
+    <div class="row">
+        <div class="col-md-6 col-lg-4 mb-3">
+            <div class="text-center">
+                <span class="text-xl font-weight-bold d-block mb-3">About Me</span>
+                <p class="text-secondary">
+                    I'm a software developer skilled in multiple languages and frameworks. I enjoy problem-solving and continuously strive to improve my skills.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-3">
+            <ul class="list-unstyled text-center mb-0">
+                <li><span class="text-xl font-weight-bold d-block mb-3">Portfolio</span></li>
+                <li><a class="text-secondary" href="home.html">Home</a></li>
+                <li><a class="text-secondary" href="about.html">About Me</a></li>
+                <li><a class="text-secondary" href="projects.html">Projects</a></li>
+                <li><a class="text-secondary" href="contact.html">Contact Me</a></li>
+                <li><a class="text-secondary" href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-3">
+            <div class="text-center">
+                <ul class="list-inline mb-3">
+                    <li class="list-inline-item footer__icon">
+                        <a class="text-xl d-block w-10 h-10 transition-all duration-300 text-white bg-secondary rounded-circle" href="https://www.facebook.com/tamiru.alemnew.5" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item footer__icon">
+                        <a class="text-xl d-block w-10 h-10 transition-all duration-300 text-white bg-secondary rounded-circle" href="https://www.instagram.com/tamiru_alemnew/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item footer__icon">
+                        <a class="text-xl d-block w-10 h-10 transition-all duration-300 text-white bg-secondary rounded-circle" href="https://www.linkedin.com/in/Tamiru-Alemnew/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item footer__icon">
+                        <a class="text-xl d-block w-10 h-10 transition-all duration-300 text-white bg-secondary rounded-circle" href="https://github.com/Tamiru-Alemnew" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-3">
+            <address class="text-center text-secondary">
+                <span class="text-lg font-weight-bold d-block mb-3">Contact</span>
+                <span class="whitespace-nowrap">Gerji, Addis Ababa Ethiopia</span>
+                <span class="whitespace-nowrap">
+                    <i class="fas fa-phone"></i>
+                    <a class="phone" href="tel:+251943045904">+251943045904</a>
+                </span>
+                <span class="whitespace-nowrap">
+                    <i class="fas fa-envelope"></i> tamirualemnew33@gmail.com
+                </span>
+            </address>
+        </div>
+    </div>
+
+    <p class="text-white text-center">Copyright &copy; 2023 Tamiru Alemnew</p>
+</footer>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./script/script.js"></script>
   </body>
 </html>

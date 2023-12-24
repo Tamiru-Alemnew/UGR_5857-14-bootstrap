@@ -7,264 +7,255 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Resume</title>
   </head>
   <body>
-    <header>
-      <div class="profile">
-        <div class="profile__name">
-          <img src="images/profile.jpg" alt="Tamiru Alemnew" />
-          <p>Tamiru Alemnew</p>
+<header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <div class="profile d-flex justify-content-between">
+            <div class="d-flex gap-2 font-weight-bold align-items-center">
+                <img src="images/profile.jpg" alt="Tamiru Alemnew" class="rounded-circle" width="50" height="50">
+                <p class="nav-item text-white  ">Tamiru Alemnew</p>
+            </div>
         </div>
 
-        <i class="fas fa-bars"></i>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+              <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          </ul>
       </div>
-      <nav>
-        <ul class="navbar-footer__navigation">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-          <li><a href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
-    </header>
+    </div>
+</header>
     <main>
-      <!-- resume page -->
-      <section class="resume">
-        <h2>Resume</h2>
-        <div class="resume__content">
-          <div class="resume__text">
-            <h3>Formal Education</h3>
-            <div class="resume__text-items">
-              <div class="resume__text-item">
-                <h4>Bachelor of Science in Computer Science</h4>
-                <p>Addis Ababa University</p>
-                <p>2021 - present</p>
-                <p>
-                  During my time at Addis Ababa University, I gained a solid
-                  foundation in computer science principles. I took courses in
-                  data structures, algorithms, software engineering, and web
-                  development. I also completed several projects, which gave me
-                  practical experience in applying the concepts I learned in
-                  class.
-                </p>
-              </div>
-              <div>
-                <p>
-                  My formal education laid the groundwork for my understanding
-                  of computer science. It provided me with the theoretical
-                  knowledge and practical skills necessary to tackle complex
-                  problems and develop efficient solutions.
-                </p>
-                <p class="hidden">
-                  Moreover, my education instilled in me a deep appreciation for
-                  the importance of continuous learning in the field of computer
-                  science. As technology evolves, I am committed to staying
-                  updated with the latest trends and advancements. This
-                  commitment to lifelong learning enables me to adapt to new
-                  challenges and continually improve as a software developer.
-                </p>
-              </div>
+        <!-- resume page -->
+        <section class="resume">
+            <div class="container py-5">
+                <h2 class="text-white text-center">Resume</h2>
+
+                <div class="mx-auto">
+                    <!-- Formal Education -->
+                    <div class="bg-white p-3 rounded">
+                        <h3>Formal Education</h3>
+                        <div class="row flex-md-row-reverse">
+                            <div class="col-md-6 mb-4">
+                                <div class="shadow p-3 rounded">
+                                    <h4>Bachelor of Science in Computer Science</h4>
+                                    <p>Addis Ababa University</p>
+                                    <p>2021 - present</p>
+                                    <p>
+                                        During my time at Addis Ababa University, I gained a solid foundation in computer science principles. I took courses in data structures, algorithms, software engineering, and web development. I also completed several projects, which gave me practical experience in applying the concepts I learned in class.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    My formal education laid the groundwork for my understanding of computer science. It provided me with the theoretical knowledge and practical skills necessary to tackle complex problems and develop efficient solutions.
+                                </p>
+                                <p class="d-none d-md-block">
+                                    Moreover, my education instilled in me a deep appreciation for the importance of continuous learning in the field of computer science. As technology evolves, I am committed to staying updated with the latest trends and advancements. This commitment to lifelong learning enables me to adapt to new challenges and continually improve as a software developer.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Informal Education -->
+                        <h3>Informal Education</h3>
+                        <div class="row justify-content-around align-items-center my-5">
+                            <div class="col-md-6 mb-4">
+                                <div class="shadow p-3 rounded">
+                                    <h4>Full Stack Web Development</h4>
+                                    <p>FreeCodeCamp</p>
+                                    <p>2023 - 2023</p>
+                                    <p>
+                                        Through this comprehensive course, I honed my skills in HTML, CSS, JavaScript, and responsive web design. I also learned back-end development using Node.js and Express.js, and data storage with MongoDB. The course included building several projects, which helped me apply the concepts I learned and gain practical experience in full stack web development.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    This course was a significant step in my journey as a full stack web developer. It allowed me to deepen my understanding of front-end and back-end technologies and gain hands-on experience through project-based learning.
+                                </p>
+                                <p class="d-none d-md-block">
+                                    With a strong foundation in computer science and a passion for web development, I am committed to creating efficient, user-friendly web applications. My experience spans multiple programming languages and frameworks, including JavaScript, React, Node.js, and Python. I am always eager to learn new technologies and take on challenging projects that push my skills to the limit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-around align-items-center my-5">
+                            <div class="col-md-6 mb-4">
+                                <div class="shadow p-3 rounded">
+                                    <h4>Software Engineering Intern</h4>
+                                    <h5>Africa to Silicon Valley (A2SV)</h5>
+                                    <p>2023 - Present</p>
+                                    <p>
+                                        As a Software Engineering Student at A2SV, I've had the opportunity to work on real-world projects and collaborate with a team of talented engineers. I've been involved in various stages of the software development lifecycle, from requirement analysis and design to coding and testing. This experience has given me a deeper understanding of software engineering principles and best practices. I've also improved my problem-solving skills and learned to work effectively in a team.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>
+                                    During my internship at A2SV, I've honed my skills in various programming languages and frameworks and learned to adapt to the fast-paced and ever-evolving tech industry. This experience has been instrumental in my growth as a software engineer.
+                                </p>
+                                <p class="d-none d-md-block">
+                                    As a dedicated software developer, I have honed my skills in a variety of programming languages and frameworks. My experience includes working with JavaScript, Python, React, and Node.js, among others. I am passionate about learning new technologies and continually improving my coding skills. My goal is to create software that not only meets functional requirements but also provides a seamless and intuitive user experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <h3>Informal Education</h3>
-            <div class="informal-education">
-              <div class="informal-education__item resume__text-item">
-                <h4>Full Stack Web Development</h4>
-                <p>FreeCodeCamp</p>
-                <p>2023 - 2023</p>
-                <p>
-                  Through this comprehensive course, I honed my skills in HTML,
-                  CSS, JavaScript, and responsive web design. I also learned
-                  back-end development using Node.js and Express.js, and data
-                  storage with MongoDB. The course included building several
-                  projects, which helped me apply the concepts I learned and
-                  gain practical experience in full stack web development.
-                </p>
-              </div>
-              <div>
-                <p>
-                  This course was a significant step in my journey as a full
-                  stack web developer. It allowed me to deepen my understanding
-                  of front-end and back-end technologies, and gain hands-on
-                  experience through project-based learning.
-                </p>
-                <p class="hidden">
-                  With a strong foundation in computer science and a passion for
-                  web development, I am committed to creating efficient,
-                  user-friendly web applications. My experience spans multiple
-                  programming languages and frameworks, including JavaScript,
-                  React, Node.js, and Python. I am always eager to learn new
-                  technologies and take on challenging projects that push my
-                  skills to the limit.
-                </p>
-              </div>
-            </div>
-            <div class="informal-education">
-              <div class="informal-education__item resume__text-item">
-                <h4>Software Engineering Intern</h4>
-                <h5>Africa to Silicon Valley (A2SV)</h5>
-                <p>2023 - Present</p>
-                <p>
-                  As a Software Engineering Student at A2SV, I've had the
-                  opportunity to work on real-world projects and collaborate
-                  with a team of talented engineers. I've been involved in
-                  various stages of the software development lifecycle, from
-                  requirement analysis and design to coding and testing. This
-                  experience has given me a deeper understanding of software
-                  engineering principles and best practices. I've also improved
-                  my problem-solving skills and learned to work effectively in a
-                  team.
-                </p>
-              </div>
-              <div>
-                <p>
-                  During my internship at A2SV, I've honed my skills in various
-                  programming languages and frameworks, and learned to adapt to
-                  the fast-paced and ever-evolving tech industry. This
-                  experience has been instrumental in my growth as a software
-                  engineer.
-                </p>
-                <p class="hidden">
-                  As a dedicated software developer, I have honed my skills in a
-                  variety of programming languages and frameworks. My experience
-                  includes working with JavaScript, Python, React, and Node.js,
-                  among others. I am passionate about learning new technologies
-                  and continually improving my coding skills. My goal is to
-                  create software that not only meets functional requirements
-                  but also provides a seamless and intuitive user experience.
-                </p>
-              </div>
-            </div>
-            <div>
-              <h4>skills</h4>
-              <div class="soft-skills__list">
-                <div class="soft-skills__group1">
-                  <div class="skill-set">
-                    <h5>Front-End Development</h5>
-                    <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>React</li>
-                    </ul>
-                  </div>
-                  <div class="skill-set">
-                    <h5>Database</h5>
-                    <ul>
-                      <li>MongoDB</li>
-                      <li>MySQL</li>
-                    </ul>
-                  </div>
-                  <div class="skill-set hidden">
-                    <h5>Soft Skills</h5>
-                    <ul>
-                      <li>Effective Communication</li>
-                      <li>Collaboration</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="soft-skills__group2">
-                  <div class="skill-set">
-                    <h5>
-                      <h5>Back-End Development</h5>
-                      <ul>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
-                        <li>Python</li>
-                      </ul>
-                    </h5>
-                  </div>
+            <div class="container mt-5">
+                <h4 class="text-center">Skills</h4>
+                <div class="row soft-skills__list">
+                    <!-- Group 1 -->
+                    <div class="col-md-4">
+                        <div class="skill-set shadow p-4 mb-4 bg-white rounded">
+                            <h5>Front-End Development</h5>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-set shadow p-4 mb-4 bg-white rounded">
+                            <h5>Database</h5>
+                            <ul>
+                                <li>MongoDB</li>
+                                <li>MySQL</li>
+                                <li>PostgreSQL</li>
+                                <li>SQLite</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-set shadow p-4 mb-4 bg-white rounded">
+                            <h5>Soft Skills</h5>
+                            <ul>
+                                <li>Effective Communication</li>
+                                <li>Collaboration</li>
+                                <li>Problem Solving</li>
+                                <li>Time Management</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                  <div class="skill-set">
-                    <h5>Other</h5>
-                    <ul>
-                      <li>Git</li>
-                      <li>GitHub</li>
-                      <li>Vercel</li>
-                      <li>Teamwork</li>
-                    </ul>
-                  </div>
-                  <div class="skill-set hidden">
-                    <h5>Frontend Frameworks</h5>
-                    <ul>
-                      <li>Tailwind CSS</li>
-                      <li>Bootstrap</li>
-                    </ul>
-                  </div>
+                    <!-- Group 2 -->
+                    <div class="col-md-4">
+                        <div class="skill-set shadow p-4 mb-4 bg-white rounded">
+                            <h5>Back-End Development</h5>
+                            <ul>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>Python</li>
+                                <li>Flask</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-set shadow p-4 mb-4 bg-white rounded">
+                            <h5>Other</h5>
+                            <ul>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>Vercel</li>
+                                <li>Teamwork</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-set shadow p-4 mb-4 bg-white rounded">
+                            <h5>Frontend Frameworks</h5>
+                            <ul>
+                                <li>Tailwind CSS</li>
+                                <li>Bootstrap</li>
+                                <li>Material UI</li>
+                                <li>React Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
-    <footer class="footer">
-      <nav class="footer__navigation">
-        <div class="footer__about-me">
-          <span class="footer__nav-title">About Me</span>
-          <p>
-            I'm a software developer skilled in multiple languages and
-            frameworks. I enjoy problem-solving and continuously strive to
-            improve my skills.
-          </p>
-        </div>
-        <ul class="footer__nav">
-          <li><span class="footer__nav-title">Portfolio</span></li>
-          <li><a class="footer__quick-links" href="home.html">Home</a></li>
-          <li><a class="footer__quick-links" href="about.html">About Me</a></li>
-          <li>
-            <a class="footer__quick-links" href="projects.html">Projects</a>
-          </li>
-          <li>
-            <a class="footer__quick-links" href="contact.html">Contact Me</a>
-          </li>
-          <li><a class="footer__quick-links" href="resume.html">Resume</a></li>
-        </ul>
-      </nav>
 
-    <div class="footer__navigation2">
-      <div class="footer__social-media">
-        <ul class="footer__social-media-list">
-          <li class="footer__icon">
-            <a href="https://www.facebook.com/tamiru.alemnew.5" target="_blank"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a href="https://www.instagram.com/tamiru_alemnew/" target="_blank"
-              ><i class="fab fa-instagram"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a
-              href="https://www.linkedin.com/in/Tamiru-Alemnew/"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-          <li class="footer__icon">
-            <a href="https://github.com/Tamiru-Alemnew" target="_blank"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-      <address class="footer__address">
-        <span class="footer__nav-title"> Contact</span>
-        <span>Gerji, Addis Ababa Ethiopia</span>
-        <span
-          ><i class="fas fa-phone"></i>
-          <a class="phone" href="tel:+251943045904">+251943045904</a></span
-        >
-        <span> <i class="fas fa-envelope"></i> tamirualemnew33@gmail.com</span>
-      </address>
-      </div>
-      
-      <p class="footer__copy-right">Copywrite &copy; 2023 Tamiru Alemnew</p>
-    </footer>
-       <script src="./script/script.js"></script>
+<footer class="container-fluid bg-dark text-white p-5">
+    <div class="row">
+        <div class="col-md-6 col-lg-4 mb-3">
+            <div class="text-center">
+                <span class="text-xl font-weight-bold d-block mb-3">About Me</span>
+                <p class="text-secondary">
+                    I'm a software developer skilled in multiple languages and frameworks. I enjoy problem-solving and continuously strive to improve my skills.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-3">
+            <ul class="list-unstyled text-center mb-0">
+                <li><span class="text-xl font-weight-bold d-block mb-3">Portfolio</span></li>
+                <li><a class="text-secondary" href="home.html">Home</a></li>
+                <li><a class="text-secondary" href="about.html">About Me</a></li>
+                <li><a class="text-secondary" href="projects.html">Projects</a></li>
+                <li><a class="text-secondary" href="contact.html">Contact Me</a></li>
+                <li><a class="text-secondary" href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-3">
+            <div class="text-center">
+                <ul class="list-inline mb-3">
+                    <li class="list-inline-item footer__icon">
+                        <a class="text-xl d-block w-10 h-10 transition-all duration-300 text-white bg-secondary rounded-circle" href="https://www.facebook.com/tamiru.alemnew.5" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item footer__icon">
+                        <a class="text-xl d-block w-10 h-10 transition-all duration-300 text-white bg-secondary rounded-circle" href="https://www.instagram.com/tamiru_alemnew/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item footer__icon">
+                        <a class="text-xl d-block w-10 h-10 transition-all duration-300 text-white bg-secondary rounded-circle" href="https://www.linkedin.com/in/Tamiru-Alemnew/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item footer__icon">
+                        <a class="text-xl d-block w-10 h-10 transition-all duration-300 text-white bg-secondary rounded-circle" href="https://github.com/Tamiru-Alemnew" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-3">
+            <address class="text-center text-secondary">
+                <span class="text-lg font-weight-bold d-block mb-3">Contact</span>
+                <span class="whitespace-nowrap">Gerji, Addis Ababa Ethiopia</span>
+                <span class="whitespace-nowrap">
+                    <i class="fas fa-phone"></i>
+                    <a class="phone" href="tel:+251943045904">+251943045904</a>
+                </span>
+                <span class="whitespace-nowrap">
+                    <i class="fas fa-envelope"></i> tamirualemnew33@gmail.com
+                </span>
+            </address>
+        </div>
+    </div>
+
+    <p class="text-white text-center">Copyright &copy; 2023 Tamiru Alemnew</p>
+</footer>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./script/script.js"></script>
   </body>
 </html>
